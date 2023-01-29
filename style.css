@@ -1,0 +1,124 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   color: #444;
+   background: #fff;
+   font-family:'Mukta', sans-serif;
+}
+
+:root{
+     font-size: 16px;
+
+   --primary-color:#0469c6;
+   --primary-light-color:#a0d1ff;
+   --primary-light2-color:#f0f8ff;
+   --primary-dark-color:#01529e;
+   --primary-dark2-color:#000e1b;
+
+   --secondry-color:#d7494b;
+   --secondry-light-color:#d7494b;
+   --secondry-light2-color:#d7494b;
+   --secondry-dark-color:#d7494b;
+   --secondry-dark2-color:#d7494b;
+
+   --text-color-light: #f6fbff;
+   --text-color-dark: #00060a;
+
+   --primary-font: 'Barlow', sans-serif;
+   --secondry-font:'Noto Sans', sans-serif;
+}
+
+.custom-container{
+    padding: 0px 80px;
+}
+.center-align-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*========================Header Section Started==================
+----------------------------------------------------------------------*/
+.header-section{
+  background-color: var(--primary-light2-color);
+  box-shadow: 0px 0px 2px #828588;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+}
+
+/* <!-- header logo --> */
+.header .logo-container{
+    height: 80px;
+    width: auto;
+    /* border: 1px solid red; */
+}
+.header .logo-container img{
+    height: 100%;
+    width: auto;
+    transform: scale(1.4);
+ }
+
+ /* <!-- header menu --> */
+.header-menu{
+    /* border: 1px solid red; */
+}
+.header-menu-items a{
+    color: var(--text-color-dark);
+ }
+ .header-menu-items a:hover{
+    color: var(--primary-dark2-color);
+    text-decoration: none;
+ }
+.menu-item{
+    margin: 0 10px;
+    padding: 6px;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    /* border: 1px solid red; */
+ }
+
+ /* <!-- sign-in and register --> */
+.header-right{margin: 0 10px;
+    /* border: 1px solid red; */
+}
+.header-right a{
+    font-family: var(--primary-font);
+    color: var(--text-color-dark);
+    font-size: 16px;
+    font-weight: 500;
+}
+.header-right a:hover{
+    color: var(--primary-dark2-color);
+    text-decoration: none;
+}
+
+/* <!-- Submit Property --> */
+.header-right button{
+    padding:8px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.header-right button:hover{
+    background: var(--primary-color);
+    color: var(--text-color-light);
+}
+
+/* <!-- Language selection --> */
+.header-right img{
+    margin-top: -6px;
+}
