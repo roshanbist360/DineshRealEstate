@@ -47,7 +47,7 @@ body{
 /*========================Header Section Started==================
 ----------------------------------------------------------------------*/
 .header-section{
-  background-color: var(--primary-light2-color);
+  background-color: #fff;
   box-shadow: 0px 0px 2px #828588;
 }
 
@@ -109,6 +109,7 @@ body{
     border-radius: 4px;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
+    background: #fff;
 }
 .header-right button:hover{
     background: var(--primary-color);
@@ -118,4 +119,106 @@ body{
 /* <!-- Language selection --> */
 .header-right img{
     margin-top: -6px;
+}
+
+/* ================ Mobie menu starts ===========================*/
+.mobileMenuBars ion-icon{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: -10px;
+    display: none;
+}
+.mobileMenu{
+	height: 100vh;
+	width: 0px;
+	background: #444;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 12;
+	transition: 0.5s;
+	transition-duration: 0.5s;
+}
+.mobileMenu .wrapper .image{
+    height: 100px;
+    background: #fff;
+}
+.mobileMenu .wrapper .image img{
+    height: 100px;
+}
+.mobile-menu-list{
+    padding-top: 20px;
+}
+.mobileMenu ul a li{
+	list-style: none;
+	text-align: left;
+	padding: 10px 40px;
+	cursor: pointer;
+}
+.mobileMenu ul a li:hover{
+   background: #222;
+}
+.mobileMenu ul a{
+	color: #fff;
+	font-size: 16px;
+}
+.mobileMenu ul a:hover{
+	text-decoration: none;
+}
+.privacyNcontact{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.privacyNcontact a{
+    color: #ccc;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.privacyNcontact a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+#close-sidebar{
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    border-bottom-right-radius: 20px;
+}
+#close-sidebar:hover{
+	background: #ddd;
+}
+#close-sidebar ion-icon{
+    color: var(--secondry-color);
+    padding: 8px;
+    font-size: 28px;
+    font-weight: 600;
+}
+#main-wrap{
+	display: none;
+}
+.overlay{
+	 box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+}
+/* submit roperty and anguage on mobile */
+.mb-submit-property-and-language a{
+    margin: 0 5px;
+}
+
+
+
+
+
+/* ================================================================================
+====================== Media Queries for responsiveness ======================= */
+
+@media screen and (max-width: 768px) {
+    .mobileMenuBars ion-icon{
+        display: block;
+    }  
+    .header-menu, #signIn-Register, #submit-property, #language{
+        display: none;
+    }
 }

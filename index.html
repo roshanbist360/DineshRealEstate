@@ -15,6 +15,9 @@
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<!-- FAVICONS ICON -->
 		<link rel="icon" type="image/png" href="images/okAuthor.png">
+        <!-- cdn for ion icons used in side bar menu -->
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script> 
         <!--  Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +38,10 @@
                     <div class="col-lg-1 logo-container">
                         <img src="images/logo.png" alt="Logo">
                     </div> 
-                    
+
+                    <!-- header contents right wrapper div -->
                     <div class="ml-auto mt-3 header-content center-align-items">
-                         <!-- header menu -->
+                     <!-- header menu -->
                      <div class="header-menu ">
                         <ul class="header-menu-items center-align-items">
                             <a href=""><li class="menu-item">Home</li></a>
@@ -49,30 +53,98 @@
                      </div>
 
                      <!-- sign-in and register -->
-                     <div class="header-right center-align-items">
+                     <div class="header-right center-align-items" id="signIn-Register">
                         <ul class="header-right-items center-align-items">
                             <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
                         </ul>
                      </div>
 
                      <!-- Submit Property -->
-                     <div class="header-right center-align-items">
+                     <div class="header-right center-align-items" id="submit-property">
                         <ul class="header-right-items center-align-items">
                             <a href=""> <button>Submit Property</button> </a>                
                         </ul>
                      </div>
 
                      <!-- Language selection -->
-                     <div class="ml-4 header-right center-align-items">
+                     <div class="ml-4 header-right center-align-items" id="language">
                         <ul class="header-right-items center-align-items">
                             <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag"> नेपाली</a>                
                         </ul>
                      </div>
-                    </div> <!--  Header content closing tag -->
+
+                      <!-- mobile menu open bars -->
+                      <div onclick="openMobileMenu()" id="mobilemenu" class="mobileMenuBars">
+                        <div class="menubar">
+                            <ion-icon name="list-outline"></ion-icon>
+                        </div>
+                     </div>
+                 </div> <!--  Header right content wrapper closing tag -->
                     
                 </div>
             </div>
         </div>
+
+        <!-- ============================= Mobile Menu Started ============================ -->
+        <div class="mobileMenu" id="mbmn">
+            <div id="main-wrap">
+                     <div class="wrapper">
+                        <div class="image center-align-items">
+                            <img src="images/logo.png" alt="logo">
+                        </div>               
+
+                         <div id="close-sidebar" onclick="closeMobileMenu()">
+                               <ion-icon name="close-circle-outline"></ion-icon>
+                         </div>
+                   </div>
+                   
+                   <!-- Submit Property -->
+                   <div class="header-right center-align-items" id="mb-submit-property-and-language">
+                    <ul class="header-right-items center-align-items">
+                        <a href="" class="mr-4"> <button>Submit Property</button> </a>
+                        <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag">&nbsp नेपाली</a>                
+                    </ul>
+                 </div>
+
+                   <ul class="mobile-menu-list">
+                        <a href=""><li class="menu-item">Home</li></a>
+                        <a href=""><li class="menu-item">Property</li></a>
+                        <!-- <a href=""><li class="menu-item">Home</li></a>
+                        <a href=""><li class="menu-item">Home</li></a>
+                        <a href=""><li class="menu-item">Home</li></a>  -->  
+                    </ul> 
+
+                    <!-- sign-in and register -->
+                    <div class="header-right center-align-items">
+                        <ul class="header-right-items center-align-items">
+                            <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
+                        </ul>
+                     </div>              
+
+                 <div class="privacyNcontact">
+                     <a href="">Privacy Policy</a> <a href="">Contact Us</a>
+                 </div>
+            </div>
+     </div>
     </section>
+
+
+    <script type="text/javascript">
+        function openMobileMenu(){
+            document.getElementById('mbmn').style.width="260px";
+            document.getElementById('main-wrap').style.display="block";
+
+            var element = document.getElementById("mbmn");
+         element.classList.add("overlay");
+        }
+        
+        function closeMobileMenu(){
+            document.getElementById('mbmn').style.width="0px";
+            document.getElementById('main-wrap').style.display="none";
+              
+              var element = document.getElementById("mbmn");
+         element.classList.remove("overlay");        	 
+        }
+    </script>
  </body>
  </html>
