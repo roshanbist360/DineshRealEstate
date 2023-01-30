@@ -88,7 +88,7 @@ body{
     /* border: 1px solid red; */
  }
 
- /* <!-- sign-in and register --> */
+ /* <!-- sign-in and register (User)--> */
 .header-right{margin: 0 10px;
     /* border: 1px solid red; */
 }
@@ -101,7 +101,15 @@ body{
     color: var(--primary-dark2-color);
     text-decoration: none;
 }
-
+#user{
+    border: 0;
+    padding:3px 6px;
+    color: #fff;
+    background: var(--primary-color);
+}
+#user:hover{
+    background: var(--primary-dark-color);
+}
 /* <!-- Submit Property --> */
 .header-right button{
     padding:8px 15px;
@@ -202,23 +210,140 @@ body{
 .overlay{
 	 box-shadow:0 0 0 10000px rgba(0,0,0,.50);
 }
-/* submit roperty and anguage on mobile */
+/* submit roperty, language and user on mobile */
 .mb-submit-property-and-language a{
     margin: 0 5px;
 }
+#mb-signInRegister{
+    margin-bottom: -20px;
+}
 
 
+/* ========================Hero Section Started==================
+ 	---------------------------------------------------------------------- */
+.hero-section{
+    height: 70vh;
+    position: relative;
+    background: #000;
+}
+.hero-bg{
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/hero.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.hero-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-content .text{
+    color: #fff;
+    text-align: center;
+}
+.hero-content .text h1,p{
+   text-shadow: 0px 0px 5px #000;
+}
+.hero-content .text h1{
+    font-family: var(--primary-font);
+ }
+.hero-content .text p{
+    margin-top: -6px;
+    font-family: var(--secondry-font);
+    font-size: 16px;
+ }
+ .search{
+    display: flex;
+    padding-top: 25px;
+ }
+.search input{
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    border: 2px solid var(--primary-color);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    font-family: var(--secondry-font);
+    color: #222;
+    font-size: 14px;
+}
+.search input::placeholder{
+    font-size: 14px;
+    color: #444;
+}
+.search .search-icon{
+    height: 50px;
+    width: 60px;
+    background: var(--primary-color);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.search .search-icon ion-icon{
+    color: #fff;
+    font-size: 24px;
+}
+.search-category{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
+.search-category select{
+    padding: 8px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--secondry-font);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+.advanced-options a{
+    color:#fff;
+    font-size: 15px;
+    font-family: var(--secondry-font);
+}
+.advanced-options a:hover{
+    color: var(--primary-light-color);
+    text-decoration: none;
+}
+.category-dropdown{
+    padding: 0;
+}
 /* ================================================================================
 ====================== Media Queries for responsiveness ======================= */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+    /* header */
     .mobileMenuBars ion-icon{
         display: block;
     }  
     .header-menu, #signIn-Register, #submit-property, #language{
         display: none;
     }
+
+    /* hero section */
+    .hero-section{
+        height: 50vh;
+    }
+    .hero-content{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* hero section */
+    .hero-section{
+        height: 40vh;
+    }
+    .hero-content{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+}
+
+@media screen and (max-width: 360px) {
 }

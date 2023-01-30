@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="header">
                     <!-- header logo -->
-                    <div class="col-lg-1 logo-container">
+                    <div class="logo-container">
                         <img src="images/logo.png" alt="Logo">
                     </div> 
 
@@ -52,10 +52,10 @@
                         </ul>
                      </div>
 
-                     <!-- sign-in and register -->
-                     <div class="header-right center-align-items" id="signIn-Register">
+                     <!-- Language selection -->
+                     <div class="ml-4 header-right center-align-items" id="language">
                         <ul class="header-right-items center-align-items">
-                            <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
+                            <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag"> नेपाली</a>                
                         </ul>
                      </div>
 
@@ -65,14 +65,14 @@
                             <a href=""> <button>Submit Property</button> </a>                
                         </ul>
                      </div>
-
-                     <!-- Language selection -->
-                     <div class="ml-4 header-right center-align-items" id="language">
+                     
+                     <!-- sign-in and register -->
+                     <div class="header-right center-align-items" id="signIn-Register">
                         <ul class="header-right-items center-align-items">
-                            <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag"> नेपाली</a>                
+                            <a href=""><button id="user"><li class="menu-item"><i class="far fa-user"></i> User</li></button></a>                
                         </ul>
                      </div>
-
+                     
                       <!-- mobile menu open bars -->
                       <div onclick="openMobileMenu()" id="mobilemenu" class="mobileMenuBars">
                         <div class="menubar">
@@ -114,8 +114,8 @@
                         <a href=""><li class="menu-item">Home</li></a>  -->  
                     </ul> 
 
-                    <!-- sign-in and register -->
-                    <div class="header-right center-align-items">
+                    <!-- sign-in and register (User)-->
+                    <div class="header-right center-align-items" id="mb-signInRegister">
                         <ul class="header-right-items center-align-items">
                             <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
                         </ul>
@@ -127,6 +127,71 @@
             </div>
      </div>
     </section>
+
+    <!-- ========================Hero Section Started==================
+ 	---------------------------------------------------------------------- -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <div class="container-fluid header-container custom-container">
+                <div class="row">
+                    <div class="hero-content">
+                        <div class="text">
+                            <h1>Dinesh Real Estate</h1>
+                            <p>Now Buy and Sell Properties with Dinesh Real Estate.</p>
+                        </div>
+
+                        <div class="search">
+                            <input type="search" name="search" placeholder="Enter address, city, or property id... " minlength="4" maxlength="50">
+                            <div class="search-icon center-align-items"><ion-icon name="search-outline"></ion-icon></div>
+                        </div>
+
+                        <div class="search-category">
+                            <div class="col-lg-4 category-dropdown">
+                                <select class="w-100" name="" id="type">
+                                    <option value="">Any Type</option>
+                                    <option value="">House</option>
+                                    <option value="">Office</option>
+                                    <option value="">Apartment</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <select class="w-100" name="" id="min">
+                                    <option value="">Min Price</option>
+                                    <option value="">1,00,000</option>
+                                    <option value="">5,00,000</option>
+                                    <option value="">10,00,000</option>
+                                    <option value="">20,00,000</option>
+                                    <option value="">50,00,000</option>
+                                    <option value="">1,00,00,000</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 category-dropdown">
+                                <select class="w-100" name="" id="max">
+                                    <option value="">Max Price</option>
+                                    <option value="">1,00,000</option>
+                                    <option value="">5,00,000</option>
+                                    <option value="">10,00,000</option>
+                                    <option value="">20,00,000</option>
+                                    <option value="">50,00,000</option>
+                                    <option value="">1,00,00,000</option>
+                                    <option value="">5,00,00,000</option>
+                                    <option value="">10,00,00,000</option>
+                                </select>
+                            </div>                         
+                        </div>
+
+                        <div class="advanced-options mt-2">
+                            <a href="#">Advance Options</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+
 
 
     <script type="text/javascript">
