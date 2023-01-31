@@ -422,6 +422,36 @@ body{
     color: #fff;
     border-radius: 4px;
 }
+.more-properties-button button{
+    background: var(--primary-color);
+    color: var(--primary-light2-color);
+    border-style: none;
+    border-radius: 4px;
+}
+.more-properties-button button:hover{
+    background: var(--primary-dark-color);
+}
+
+/* ========================Footer Section Started==================
+ 	---------------------------------------------------------------------- */
+.footer-bottom{
+    color: var(--primary-light2-color);
+    background: var(--primary-dark2-color);
+    padding: 15px 0;
+    font-size: 14px;
+    font-family: var(--secondry-font);
+}
+.footer-bottom a{
+    color: var(--primary-light2-color);
+}
+.footer-bottom a:hover{
+    color: var(--primary-light-color);
+    text-decoration: none;
+}
+.footer-bottom .powered-by{
+    text-align: right;
+}
+
 
 /* ================================================================================
 ====================== Media Queries for responsiveness ======================= */
@@ -455,12 +485,22 @@ body{
     .hero-content{
         width: 80%;
     }
+
+    /* bottom - footer */
+    .privacy-policy{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
     /* hero section */
     .hero-content{
         width: 95%;
+    }
+
+    /* .footer-bottom */
+    .footer-bottom .powered-by, .copyright{
+        text-align: center;
     }
 }
 
