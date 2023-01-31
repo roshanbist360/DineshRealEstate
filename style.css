@@ -44,6 +44,20 @@ body{
     justify-content: center;
     align-items: center;
 }
+.heading-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading-text .title, .title-description{
+    color: var(--primary-dark2-color);
+    font-family: var(--secondry-font);
+    text-shadow: none;
+    line-height: 20px;
+}
+.heading-text .title{
+    line-height: 28px;
+    font-family: var(--primary-font);
+}
 /*========================Header Section Started==================
 ----------------------------------------------------------------------*/
 .header-section{
@@ -311,9 +325,120 @@ body{
 .category-dropdown{
     padding: 0;
 }
+
+
+/* ========================Properties Section Started==================
+ 	---------------------------------------------------------------------- */
+.properties-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.property-item{
+     display: flex;
+     background: var(--primary-light2-color);
+     border-radius: 8px;
+     margin-bottom: 40px;
+     width: 48%;
+}
+.property-item .property-image{
+    height: 270px;
+}
+.property-item .property-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.property-description-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.property-description{
+    padding:0 12px;
+}
+.property-item-title{
+    font-size: 20px;
+    font-family: var(--primary-font);
+    color: var(--primary-dark2-color);
+    line-height: 20px;
+}
+.property-item-price{
+    font-size: 16px;
+    font-family: var(--secondry-font);
+    color: var(--primary-color);
+    margin-top: 8px;
+}
+.property-item-location{
+    font-size: 14px;
+    font-family: var(--secondry-font);
+    margin-top: 8px;
+    color: #444;
+}
+.property-item ion-icon{
+    margin-bottom: -2px;
+    font-size: 16px;
+    color: var(--primary-dark2-color);
+}
+.property-item-details{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.property-item-details .detail{
+    color: #444;
+    font-size: 15px;
+    font-family: var(--secondry-font);
+    width: 50%;
+    margin-top: 8px;
+}
+.property-item-details .detail a{
+    color: #444;
+}
+.property-item-details .detail a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.property-id-and-detailsBtn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.property-id-and-detailsBtn .property-id{
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: var(--secondry-font);
+    color: var(--primary-color);
+    width: 70%;
+}
+.property-id-and-detailsBtn .property-item-details{
+    padding: 4px 8px;
+    font-size: 14px;
+    font-family: var(--secondry-font);
+    border-style: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+}
+
 /* ================================================================================
 ====================== Media Queries for responsiveness ======================= */
 
+@media screen and (max-width: 1100px) {
+    /* properties */
+    .properties-content{
+        display: inline-block;
+        width: 100%;
+    }
+    .property-item{
+        width: 100%;
+    }
+    .property-item .property-image{
+        height: 260px;
+    }
+}
 @media screen and (max-width: 992px) {
     /* header */
     .mobileMenuBars ion-icon{
@@ -325,7 +450,7 @@ body{
 
     /* hero section */
     .hero-section{
-        height: 50vh;
+        height: 45vh;
     }
     .hero-content{
         width: 80%;
@@ -334,15 +459,28 @@ body{
 
 @media screen and (max-width: 767px) {
     /* hero section */
-    .hero-section{
-        height: 40vh;
-    }
     .hero-content{
         width: 95%;
     }
 }
 
+@media screen and (max-width: 576px) {
+    /* properties */
+    .property-item{
+        display: block;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .property-description{
+        padding:25px 08px;
+    }
+}
+
 @media screen and (max-width: 450px) {
+    /* hero section */
+    .hero-section{
+        height: 55vh;
+    }
 }
 
 @media screen and (max-width: 360px) {
