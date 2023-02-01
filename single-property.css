@@ -1,0 +1,31 @@
+/* <!-- ========================Photo Slider Section Started==================
+ 	---------------------------------------------------------------------- --> */
+.photo-slider-section{
+    margin: 60px 0;
+}
+.photo-slider-section .photo-slider{
+    width: 100%;
+}
+.photo-slider-section .photo{
+    height: 65vh;
+    width: 100%;
+}
+.photo-slider-section .photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.photo-slider-section .small-image{
+    margin-top: 20px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    display: inline-flex;
+}
+.photo-slider-section .small-slider-images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

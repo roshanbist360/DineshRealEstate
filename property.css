@@ -1,0 +1,23 @@
+
+.hero-content{
+    top: 45%;
+    flex-wrap: wrap;
+}
+.hero-section{
+    height: 30vh;
+    margin-bottom: 40px;
+}
+.hero-bg{
+    height: 100%;
+    background: #eee;
+ }
+.search-category{
+    margin-top: 10px;
+}
+
+.properties-section hr{
+    width: 260px;
+    margin-top: -60px;
+    height: 2px;
+    background: var(--secondry-color);
+}
