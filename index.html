@@ -67,7 +67,7 @@
                      <!-- sign-in and register -->
                      <div class="header-right center-align-items" id="signIn-Register">
                         <ul class="header-right-items center-align-items">
-                            <a href=""><button id="user"><li class="menu-item"><i class="far fa-user"></i> User</li></button></a>                
+                            <button id="user" onclick="showSignInForm()"><li class="menu-item"><i class="far fa-user"></i> User</li></button>               
                         </ul>
                      </div>
                      
@@ -125,6 +125,151 @@
             </div>
      </div>
     </section>
+
+
+
+<!-- ========================LogIn Register PopUp Started==================
+ 	---------------------------------------------------------------------- -->
+    <section class="logIn-Register-popUp-section" id="sign-in-wrapper">
+        <div class="container logIn-Register-container ">
+            <div class="row">
+                <!-- sign in -->
+                <span onclick="closeSignInForm()" class="sub-title-text text-danger ml-auto pr-3" style="cursor:pointer; margin-bottom: -20px;"> <ion-icon name="close-circle-outline" ></ion-icon> Close</span>
+                <div class="form-popup center-align-items" id="form-sign-in">
+                    <div class="popup-content center-align-items contact-form contact-card mb-5">
+                        <form action="">
+                               <div class="row center-align-items">
+                                     <span class="sub-title-text text-center">Sign In</span>                                 
+
+                                     <div class="form-item">
+                                        <input type="email" name="" placeholder="Enter Your Email " class="formInput" required="" minlength="8" maxlength="50">
+                                    </div>
+
+                                     <div class="form-item">
+                                        <input type="password" name="" placeholder="Your Password " class="formInput" required="" minlength="8" maxlength="14">
+                                     </div>
+
+                                     <div class="form-item">
+                                        <input type="checkbox"> <span>Remember Me</span>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <a href="">Forgot Your Password?</a>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <button class="w-100 bg-dark">LOG IN</button>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <span>Or Sign In With</span>
+                                     </div>
+
+                                     <div class="form-item center-align-items" id="mobile-view-register">
+                                        <a href="">Register / Sign Up</a>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <button class="w-50 facebook-sign-in"><ion-icon name="logo-facebook"></ion-icon> &nbsp; Facebook</button>
+                                         &nbsp; &nbsp;  &nbsp; <button class="w-50 google-sign-in"><ion-icon name="logo-google"></ion-icon> &nbsp; Google</button>
+                                     </div>
+                         </form>
+                        </div>
+                </div>
+
+                <!-- sign up -->
+                <div class="sign-up center-align-items px-4" id="form-sign-up">
+                    <div class="sign-up-content">
+                        <div class="form-item center-align-items">
+                            <span class="sub-title-text text-center text-white">New to Dinesh Real Estate?</span> 
+                         </div>
+                         <div class="form-item center-align-items mt-3">
+                            <span class="paragraph-text text-center text-white">Are you new to Dinesh Real Estate? Sign Up and enjoy our services.</span> 
+                         </div>
+                         <form action="">
+                            <div class="form-item center-align-items mt-3">
+                                <button class="w-50" onclick="openRegisterForm()">SIGN UP</button>
+                             </div>
+                         </form>
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================LogIn Register PopUp ==Re-used== and some modifications done==================
+ 	---------------------------------------------------------------------- -->
+     <section class="logIn-Register-popUp-section" id="register-wrapper">
+        <div class="container logIn-Register-container ">
+            <div class="row">
+                <!-- sign in -->
+                <span onclick="closeRegisterForm1()" class="sub-title-text text-danger ml-auto pr-3" style="cursor:pointer; margin-bottom: -20px;"> <ion-icon name="close-circle-outline" ></ion-icon> Close</span>
+                <div class="form-popup center-align-items" id="form-sign-in">
+                    <div class="popup-content center-align-items contact-form contact-card mb-5">
+                        <form action="">
+                               <div class="row center-align-items">
+                                     <span class="sub-title-text text-center">Register</span>                                 
+                                   
+                                     <div class="form-item">
+                                        <input type="text" name="" placeholder="Full Name " class="formInput" required="" minlength="3" maxlength="30">
+                                    </div>
+
+                                     <div class="form-item">
+                                        <input type="email" name="" placeholder="Enter Your Email " class="formInput" required="" minlength="8" maxlength="30">
+                                    </div>
+
+                                    <div class="form-item">
+                                        <input type="phone" name="" placeholder="Enter Phone" class="formInput" required="" minlength="8" maxlength="14">
+                                    </div>
+
+                                     <div class="form-item">
+                                        <input type="password" name="" placeholder="Your Password " class="formInput" required="" minlength="6" maxlength="20">
+                                     </div>
+
+                                     <div class="form-item">
+                                        <input type="password" name="" placeholder="Re-Type Password " class="formInput" required="" minlength="6" maxlength="20">
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <button class="w-100 bg-dark" onclick="">SIGN UP</button>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <span>Or Sign Up With</span>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <button class="w-50 facebook-sign-in"><ion-icon name="logo-facebook"></ion-icon> &nbsp; Facebook</button>
+                                         &nbsp; &nbsp;  &nbsp; <button class="w-50 google-sign-in"><ion-icon name="logo-google"></ion-icon> &nbsp; Google</button>
+                                     </div>
+                         </form>
+                        </div>
+                </div>
+
+                <!-- sign up -->
+                <div class="sign-up center-align-items px-4" id="form-sign-up">
+                    <div class="sign-up-content">
+                        <div class="form-item center-align-items">
+                            <span class="sub-title-text text-center text-white">Already Registered?</span> 
+                         </div>
+                         <div class="form-item center-align-items mt-3">
+                            <span class="paragraph-text text-center text-white">Are you already registered user? Log In enjoy our services.</span> 
+                         </div>
+                         <form action="">
+                            <div class="form-item center-align-items mt-3">
+                                <button class="w-50" onclick="closeRegisterForm()">LOG IN</button>
+                             </div>
+                         </form>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- ========================Hero Section Started==================
  	---------------------------------------------------------------------- -->
@@ -424,6 +569,33 @@
               
               var element = document.getElementById("mbmn");
          element.classList.remove("overlay");        	 
+        }
+
+        function showSignInForm(){
+            document.getElementById('sign-in-wrapper').style.display="block";
+        }
+        function closeSignInForm(){
+            document.getElementById('sign-in-wrapper').style.display="none";
+        }
+
+        function openRegisterForm(){
+            closeSignInForm();
+            document.getElementById('register-wrapper').style.display="block";
+        }
+        function closeRegisterForm(){
+            document.getElementById('register-wrapper').style.display="none";
+            showSignInForm();
+        }
+        function closeRegisterForm1(){
+            document.getElementById('register-wrapper').style.display="none";
+        }
+        function openRegisterForm(){
+            closeSignInForm();
+            document.getElementById('register-wrapper').style.display="block";
+        }
+        function closeRegisterForm(){
+            document.getElementById('register-wrapper').style.display="none";
+            showSignInForm();
         }
     </script>
  </body>

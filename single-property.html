@@ -121,7 +121,7 @@
                     <!-- sign-in and register (User)-->
                     <div class="header-right center-align-items" id="mb-signInRegister">
                         <ul class="header-right-items center-align-items">
-                            <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
+                            <button id="user" onclick="showSignInForm()"><li class="menu-item"><i class="far fa-user"></i> User</li></button>                
                         </ul>
                      </div>              
 
@@ -224,17 +224,8 @@
             <div class="container-fluid detailed-descriptions-container custom-container">
                 <div class="row">
                      <div class="detailed-descriptions-left col-lg-7">
-                        <div class="heading-text w-100">
-                            <div class="heading-text center-align-items">
-                                <h3 class="title">Detailed Property Description</h3>
-                            </div>
-                            <div class="heading-text center-align-items">
-                                <hr class="solid" style="width: 90%;">
-                            </div>                              
-                       </div>
-
                        <div class="detail-features">
-                            <div class="property-item-title sub-title-text">3.5 Storey House For Sale at Dhangadhi,Kailali</div>
+                            <div class="property-item-title sub-title-text mt-3">3.5 Storey House For Sale at Dhangadhi,Kailali</div>
                             <div class="property-item-description paragrapgh-text my-3">The house is located at Chatakpur, Dhangadhi of Kailali district near main east west highway.
                                 The house is located at Chatakpur, Dhangadhi of Kailali district near main east west highway.
                             </div>
@@ -346,14 +337,14 @@
     <!-- ========================Recommended Properties Section Started==================
  	---------------------------------------------------------------------- -->
         <section class="recommended-peoperties-section contact-card">
-            <div class="container-fluid recommended-properties-container custom-container">
+            <div class="container-fluid recommended-properties-container custom-container text-left">
                 <div class="heading-text w-100 mt-4">
-                    <div class="heading-text center-align-items">
+                    <div class="heading-text text-left">
                         <h3 class="title">Similar Properties Recommended For You</h3>
                     </div>
-                    <div class="heading-text center-align-items">
-                        <hr class="solid" style="width: 60%;">
-                    </div>                              
+                    <!-- <div class="heading-text">
+                        <hr class="solid" style="width: 30%;">
+                    </div>                               -->
                </div>
 
                 <div class="row">
@@ -536,7 +527,6 @@
               1500:{
                   items:6
               }
-
           }
         })
     </script>

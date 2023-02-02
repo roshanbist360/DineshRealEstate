@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <title>Dinesh Real Estate - Best real state in Nepal for land buy and sell.</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">		
+		<!--   CSS file included -->
+		<link rel="stylesheet" type="text/css" href="style.css">		
+		<!-- cdn for fontawesome -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<!-- FAVICONS ICON -->
+		<link rel="icon" type="image/png" href="images/">
+        <!-- cdn for ion icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script> 
+        <!--  Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">	           
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <!--  animate.css cdn to use animations -->
+        <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+	</head>
+
+ <body>
+    <!-- ========================Header Section Started==================
+ 	---------------------------------------------------------------------- -->
+    <section class="header-section">
+        <div class="container-fluid header-container custom-container">
+            <div class="row">
+                <div class="header">
+                    <!-- header logo -->
+                    <div class="logo-container">
+                        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                    </div> 
+
+                    <!-- header contents right wrapper div -->
+                    <div class="ml-auto mt-3 header-content center-align-items">
+                     <!-- header menu -->
+                     <div class="header-menu ">
+                        <ul class="header-menu-items center-align-items">
+                            <a href="index.html"><li class="menu-item">Home</li></a>
+                            <a href="property.html"><li class="menu-item">Property</li></a>
+                            <!-- <a href=""><li class="menu-item">Home</li></a>
+                            <a href=""><li class="menu-item">Home</li></a>
+                            <a href=""><li class="menu-item">Home</li></a>                     -->
+                        </ul>
+                     </div>
+
+                     <!-- Language selection -->
+                     <div class="ml-4 header-right center-align-items" id="language">
+                        <ul class="header-right-items center-align-items">
+                            <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag"> नेपाली</a>                
+                        </ul>
+                     </div>
+
+                     <!-- Submit Property -->
+                     <div class="header-right center-align-items" id="submit-property">
+                        <ul class="header-right-items center-align-items">
+                            <a href=""> <button>Submit Property</button> </a>                
+                        </ul>
+                     </div>
+                     
+                     <!-- sign-in and register -->
+                     <div class="header-right center-align-items" id="signIn-Register">
+                        <ul class="header-right-items center-align-items">
+                            <a href=""><button id="user"><li class="menu-item"><i class="far fa-user"></i> User</li></button></a>                
+                        </ul>
+                     </div>
+                     
+                      <!-- mobile menu open bars -->
+                      <div onclick="openMobileMenu()" id="mobilemenu" class="mobileMenuBars">
+                        <div class="menubar">
+                            <ion-icon name="list-outline"></ion-icon>
+                        </div>
+                     </div>
+                 </div> <!--  Header right content wrapper closing tag -->
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================= Mobile Menu Started ============================ -->
+        <div class="mobileMenu" id="mbmn">
+            <div id="main-wrap">
+                     <div class="wrapper">
+                        <div class="image center-align-items">
+                            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                        </div>               
+
+                         <div id="close-sidebar" onclick="closeMobileMenu()">
+                               <ion-icon name="close-circle-outline"></ion-icon>
+                         </div>
+                   </div>
+                   
+                   <!-- Submit Property -->
+                   <div class="header-right center-align-items" id="mb-submit-property-and-language">
+                    <ul class="header-right-items center-align-items">
+                        <a href="" class="mr-4"> <button>Submit Property</button> </a>
+                        <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag">&nbsp नेपाली</a>                
+                    </ul>
+                 </div>
+
+                   <ul class="mobile-menu-list">
+                        <a href="index.html"><li class="menu-item">Home</li></a>
+                        <a href="property.html"><li class="menu-item">Property</li></a>
+                        <!-- <a href=""><li class="menu-item">Home</li></a>
+                        <a href=""><li class="menu-item">Home</li></a>
+                        <a href=""><li class="menu-item">Home</li></a>  -->  
+                    </ul> 
+
+                    <!-- sign-in and register (User)-->
+                    <div class="header-right center-align-items" id="mb-signInRegister">
+                        <ul class="header-right-items center-align-items">
+                            <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
+                        </ul>
+                     </div>              
+
+                 <div class="privacyNcontact">
+                     <a href="">Privacy Policy</a> <a href="">Contact Us</a>
+                 </div>
+            </div>
+     </div>
+    </section>
+
+
+
+<!-- ========================LogIn Register PopUp Started==================
+ 	---------------------------------------------------------------------- -->
+    <section class="logIn-Register-popUp-section">
+        <div class="container-fluid hero-container custom-container">
+            <div class="row">
+                <div class="form-popup">
+                    <div class="contact-form contact-card mb-5">
+                        <form>
+                               <div class="row center-align-items">
+                                     <ion-icon name="mail-outline"></ion-icon> &nbsp;&nbsp; <span class="sub-title-text text-center"> Leave us a message</span>
+                                     <div class="form-item">
+                                           <input type="text" name="" placeholder="Name: " class="formInput" required="" minlength="3" maxlength="30">
+                                     </div>
+
+                                     <div class="form-item">
+                                        <input type="text" name="" placeholder="Email: " class="formInput" required="" minlength="8" maxlength="50">
+                                    </div>
+
+                                     <div class="form-item">
+                                        <input type="text" name="" placeholder="Phone: " class="formInput" required="" minlength="8" maxlength="14">
+                                     </div>
+
+                                     <div class="form-item">
+                                        <span>Message:</span><textarea rows="4" class="formInput" required="" id="messageArea" minlength="6" maxlength="800"> </textarea>
+                                     </div>
+
+                                     <div class="form-item center-align-items">
+                                        <button class="w-50">SUBMIT REQUEST</button>
+                                     </div>
+                         </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+     <!-- ========================Footer Section Started==================
+ 	---------------------------------------------------------------------- -->
+     <section class="container-fuid footer-bottom">
+        <div class="custom-container">
+            <div class="row">
+                <div class="copyright col-lg-7 col-md-7 col-12">&copy; Dinesh Real Estate. All Rights Reserved 2023.</div>
+                <div class="privacy-policy col-lg-2 col-md-0 col-0">Privacy Policy</div>
+                <div class="powered-by col-lg-3 col-md-5 col-12">Powered By: <a href="#">Neem Infosys</a> </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        function openMobileMenu(){
+            document.getElementById('mbmn').style.width="260px";
+            document.getElementById('main-wrap').style.display="block";
+
+            var element = document.getElementById("mbmn");
+         element.classList.add("overlay");
+        }
+        
+        function closeMobileMenu(){
+            document.getElementById('mbmn').style.width="0px";
+            document.getElementById('main-wrap').style.display="none";
+              
+              var element = document.getElementById("mbmn");
+         element.classList.remove("overlay");        	 
+        }
+    </script>
+ </body>
+ </html>

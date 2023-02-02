@@ -261,6 +261,130 @@ body{
     margin-bottom: -20px;
 }
 
+/* ========================LogIn Register PopUp Started==================
+ 	---------------------------------------------------------------------- */
+/* sign in */
+#sign-in-wrapper{
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+#register-wrapper{
+    position: fixed;
+    width: 100%;
+    display: none;
+    z-index: 15;
+}
+.logIn-Register-popUp-section{
+    height: 100vh;
+    background: #fff;
+    z-index: 10;
+}
+.logIn-Register-container{
+    width: 60%;
+}
+.form-popup{
+    margin-top: 25px;
+    box-shadow: 2px 2px 5px #666;
+    border-radius: 6px;
+    /* backdrop-filter: blur(10px); */
+}
+.popup-content{
+    height: 100%;
+    width: 50%;
+    padding:40px;
+    margin-top: 48px;
+}
+#mobile-view-register{
+    display: none;
+}
+    form .form-item{
+        width: 100%;
+        margin-top: 20px;
+    }
+    form .formInput{
+        border-style: none;
+        border: 2px solid #666;
+        width: 100%;
+        font-family: var(--primary-font);
+        border-radius: 4px;
+        font-size: 15px;
+        padding: 5px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    form .form-item{
+        text-align: left;
+    }
+    form .form-item span{
+        font-family: var(--primary-font);
+        color: #666;
+        font-size: 16px;
+    }
+    form input:focus{
+        outline-width: 0;
+        border: 2px solid var(--primary-color);
+    }
+    
+    form span{
+        color: #888888;
+    }
+    
+    form textarea:focus{
+        outline-width: 0;
+        border: 2px solid var(--primary-color);
+    }
+    
+    form button{
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border-style: none;
+        font-weight: 600;
+        font-size: 0.85rem;
+        font-family: var(--secondry-font);
+        background-color: var(--primary-color);
+        color: #fff; 
+        transition: 0.3s;	
+    }
+    
+    form button:focus{
+        outline-width: 0;
+    }
+    form button:hover{
+        background-color: var(--primary-dark-color);
+    }
+    .facebook-sign-in ion-icon, .google-sign-in ion-icon{
+        font-size: 24px;
+        margin-bottom: -7px;
+   }
+    .facebook-sign-in{
+       background: var(--primary-dark-color);
+   }
+    .google-sign-in{
+        background: var(--secondry-dark-color);
+    }
+    .facebook-sign-in:hover{
+        background: var(--primary-color);
+    }
+     .google-sign-in:hover{
+         background: var(--secondry-color);
+     }
+.mobile-view-register{
+    display: none;
+}
+
+/* sign up */
+.sign-up{
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+    background: var(--primary-dark2-color);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
 
 /* ========================Hero Section Started==================
  	---------------------------------------------------------------------- */
@@ -500,6 +624,11 @@ body{
     .property-item .property-image{
         height: 260px;
     }
+
+    /* sign-in form */
+    .logIn-Register-container{
+        width: 90%;
+    }
 }
 @media screen and (max-width: 992px) {
     /* header */
@@ -533,6 +662,19 @@ body{
     /* .footer-bottom */
     .footer-bottom .powered-by, .copyright{
         text-align: center;
+    }
+    /* sign-in form */
+    .mobile-view-register{
+        display: block;
+    }
+    .logIn-Register-container{
+        width: 100%;
+    }
+    .popup-content{
+        width: 100%;
+    }
+    #form-sign-up{
+        display: none;
     }
 }
 
