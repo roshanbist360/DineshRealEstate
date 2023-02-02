@@ -74,6 +74,16 @@ body{
     font-family: var(--primary-font);
     font-weight: 600;
 }
+
+/* recommended properties */
+.property-item{
+    width: 30%;
+    display: block;
+    justify-content: space-between;
+}
+.recomended-property-item{
+    background: #ddd;
+}
 /*========================Header Section Started==================
 ----------------------------------------------------------------------*/
 .header-section{
