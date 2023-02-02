@@ -50,33 +50,34 @@
                         </ul>
                      </div>
 
-                     <!-- Language selection -->
-                     <div class="ml-4 header-right center-align-items" id="language">
-                        <ul class="header-right-items center-align-items">
-                            <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag"> नेपाली</a>                
-                        </ul>
-                     </div>
-
                      <!-- Submit Property -->
                      <div class="header-right center-align-items" id="submit-property">
                         <ul class="header-right-items center-align-items">
                             <a href=""> <button>Submit Property</button> </a>                
                         </ul>
                      </div>
-                     
-                     <!-- sign-in and register -->
-                     <div class="header-right center-align-items" id="signIn-Register">
+
+                    <!-- Language selection -->
+                    <div class="ml-4 header-right center-align-items" id="language">
                         <ul class="header-right-items center-align-items">
-                            <button id="user" onclick="showSignInForm()"><li class="menu-item"><i class="far fa-user"></i> User</li></button>               
+                            <a href=""> <img src="images/nepal-flag.png" alt="nepali-flag"> नेपाली</a>                
                         </ul>
                      </div>
                      
-                      <!-- mobile menu open bars -->
-                      <div onclick="openMobileMenu()" id="mobilemenu" class="mobileMenuBars">
+                     <!-- mobile menu open bars -->
+                     <div onclick="openMobileMenu()" id="mobilemenu" class="mobileMenuBars">
                         <div class="menubar">
                             <ion-icon name="list-outline"></ion-icon>
                         </div>
                      </div>
+
+                     <!-- sign-in and register (user)-->
+                     <div class="header-right center-align-items mr-0">
+                        <ul class="header-right-items center-align-items">
+                            <button id="user" onclick="showSignInForm()"><li class="menu-item"><i class="far fa-user"></i></li></button>               
+                        </ul>
+                     </div>
+                     
                  </div> <!--  Header right content wrapper closing tag -->
                     
                 </div>
@@ -110,14 +111,7 @@
                         <!-- <a href=""><li class="menu-item">Home</li></a>
                         <a href=""><li class="menu-item">Home</li></a>
                         <a href=""><li class="menu-item">Home</li></a>  -->  
-                    </ul> 
-
-                    <!-- sign-in and register (User)-->
-                    <div class="header-right center-align-items" id="mb-signInRegister">
-                        <ul class="header-right-items center-align-items">
-                            <a href=""><li class="menu-item"><i class="far fa-user"></i> Sign In / Register</li></a>                
-                        </ul>
-                     </div>              
+                    </ul>             
 
                  <div class="privacyNcontact">
                      <a href="">Privacy Policy</a> <a href="">Contact Us</a>
@@ -166,7 +160,7 @@
                                      </div>
 
                                      <div class="form-item center-align-items" id="mobile-view-register">
-                                        <a href="">Register / Sign Up</a>
+                                        <a href="" onclick="openRegisterForm()">Register / Sign Up</a>
                                      </div>
 
                                      <div class="form-item center-align-items">
@@ -234,6 +228,11 @@
 
                                      <div class="form-item center-align-items">
                                         <button class="w-100 bg-dark" onclick="">SIGN UP</button>
+                                     </div>
+
+                                     <div class="form-item center-align-items" id="mobile-view-sign-in">
+                                        <span class="sub-title-text">Already registered?</span>
+                                         <a href="" onclick="closeRegisterForm()" class="pt-1">&ensp; Sign In</a>
                                      </div>
 
                                      <div class="form-item center-align-items">

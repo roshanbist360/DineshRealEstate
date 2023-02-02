@@ -300,6 +300,9 @@ body{
 #mobile-view-register{
     display: none;
 }
+#mobile-view-sign-in{
+    display: none;
+}
     form .form-item{
         width: 100%;
         margin-top: 20px;
@@ -372,9 +375,6 @@ body{
      .google-sign-in:hover{
          background: var(--secondry-color);
      }
-.mobile-view-register{
-    display: none;
-}
 
 /* sign up */
 .sign-up{
@@ -653,6 +653,16 @@ body{
     .privacy-policy{
         display: none;
     }
+     
+    /* sign-in-register-form */
+    #mobile-view-register{
+        display: block;
+        text-align: center;
+    }
+    #mobile-view-sign-in{
+        display: block;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -666,9 +676,6 @@ body{
         text-align: center;
     }
     /* sign-in form */
-    .mobile-view-register{
-        display: block;
-    }
     .logIn-Register-container{
         width: 100%;
     }
