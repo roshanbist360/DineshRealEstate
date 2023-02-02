@@ -8,7 +8,9 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">		
 		<!--   CSS file included -->
-		<link rel="stylesheet" type="text/css" href="style.css">		
+		<link rel="stylesheet" type="text/css" href="style.css">     
+        <!-- JS file included -->
+        <script type="text/javascript" src="index.js"></script>
 		<!-- cdn for fontawesome -->
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<!-- FAVICONS ICON -->
@@ -553,47 +555,5 @@
     </section>
 
 
-    <script type="text/javascript">
-        // mobie menu controls
-        function openMobileMenu(){
-            document.getElementById('mbmn').style.width="260px";
-            document.getElementById('main-wrap').style.display="block";
-
-            var element = document.getElementById("mbmn");
-            element.classList.add("overlay");
-        };      
-        function closeMobileMenu(){
-            document.getElementById('mbmn').style.width="0px";
-            document.getElementById('main-wrap').style.display="none";
-              
-            var element = document.getElementById("mbmn");
-            element.classList.remove("overlay");        	 
-        };
-
-        // sign-In-Register Controls
-        function showSignInForm(){
-            document.getElementById('sign-in-wrapper').style.display="block";
-        };
-
-        function closeSignInForm(){
-            document.getElementById('sign-in-wrapper').style.display="none";
-        };
-
-        function openRegisterForm(){
-            document.getElementById('sign-in-wrapper').style.display="none";
-            document.getElementById('register-wrapper').style.display="block";
-            event.preventDefault();
-        };
-
-        function closeRegisterForm(){
-            document.getElementById('register-wrapper').style.display="none";
-            document.getElementById('sign-in-wrapper').style.display="block";
-            event.preventDefault();
-        };
-        //for closing register form oncick at red close at top of form
-        function closeRegisterForm1(){
-            document.getElementById('register-wrapper').style.display="none";
-        };
-    </script>
  </body>
  </html>
