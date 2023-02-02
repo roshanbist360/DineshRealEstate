@@ -266,10 +266,12 @@ body{
 /* sign in */
 #sign-in-wrapper{
     position: fixed;
+    top: 0;
     width: 100%;
     display: none;
 }
 #register-wrapper{
+    top: 0;
     position: fixed;
     width: 100%;
     display: none;
@@ -284,7 +286,7 @@ body{
     width: 60%;
 }
 .form-popup{
-    margin-top: 25px;
+    margin-top: 40px;
     box-shadow: 2px 2px 5px #666;
     border-radius: 6px;
     /* backdrop-filter: blur(10px); */
