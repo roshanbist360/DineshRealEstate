@@ -20,6 +20,9 @@
           <!-- cdn for ion icons -->
           <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script> 
+          <!-- cdn for material icons -->
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+          <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
           <!--  Google Fonts -->
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -275,14 +278,24 @@
         </div>
     </section>
 
-    
-   <!-- ========================Photo Slider Section (including description and map at right) Started==================
+
+   <!-- ========================Photo Slider and Detail Section (including sidebar) Started==================
  	---------------------------------------------------------------------- -->
-    <section>
-        <section class="photo-slider-section">
-            <div class="container-fluid header-container custom-container">
-                <div class="row">
-                    <div class="photo-slider col-lg-7">
+        <section class="">
+           <div class="container-fluid single-page-body-container custom-container">
+            <div class="row">
+        
+                <div class="photo-slider-section col-lg-8">
+                    <!-- photo slider -->
+                    <div class="photo-slider">
+
+                        <div class="property-description mt-2" style="background: #fff;">
+                            <div class="property-item-title" style="font-size: 32px; line-height: 40px; font-weight: 600;">House For Sale at Mahendranagar, Kanchanpur</div>
+                            <div class="property-item-location sub-title-text">
+                                <ion-icon name="location-outline" class="sub-title-text" style="margin-bottom: -5px;"></ion-icon><span>Katan-18,Mahendranagar, Kanchanpur, Nepal</span>
+                            </div>                           
+                        </div>
+
                         <div class="photo">
                             <img src="images/hero.jpg" alt="image" id="main-single-property-photo">
                         </div>                      
@@ -313,36 +326,131 @@
                                     <img src="images/hero.jpg" alt="image" id="6" onclick="showImage(6)">
                                  </div>
                              </div>
-                        </div>                     
-                    </div>
+                        </div>
+                    </div><!-- photo slider ends -->
                     
-                    <!-- property description and property location map at right side -->
-                    <div class="short-description-and-map  col-lg-5 mt-3 center-align-items2">
-                        <div class="property-description-container w-100">
-                            <div class="property-description mt-2">
-                                <div class="property-item-title">House For Sale at Mahendranagar, Kanchanpur</div>
-                                <div class="property-item-price">Rs 12,40,000</div>
-                                <div class="property-item-location">
-                                    <ion-icon name="location-outline"></ion-icon>   <span>Katan-18,Mahendranagar, Kanchanpur, Nepal</span>
+                    <!-- property-detail-block starts-->
+                    <div class="contact-card justify-content-between flex-wrap my-5">
+                        <div class="property-detail-block col-lg-4 col-md-4 col-12 py-5 center-align-items">
+                            <div class="text-left">
+                                <div class="price paragraph-text">Price</div>
+                                <div class="price sub-title-text mt-3">Rs 56,60,00,000</div>
+                                <div style="background:#d7494b; padding:8px 10px; margin-top: 20px; color: #fff;
+                                 border-radius: 4px; width: 100px;">Negotiable</div>
+                            </div>
+                        </div>
+                        <div class="property-detail-block col-lg-4 col-md-4 col-6 center-align-items">
+                            <div class="d-inline">
+                                <div class="block-detail-item mb-4 text-left">                                  
+                                        <div class="material-icons"> format_shapes </div>
+                                        <div style="margin-bottom: 10px;">Area 4.6 Aana </div>
                                 </div>
-    
-                                <div class="property-item-details">
-                                    <div class="detail property-item-area"><ion-icon name="square-outline"></ion-icon> 5.6 aana</div>
-                                    <div class="detail property-contact">
-                                        <a href="tel:9848730330"><ion-icon name="phone-portrait-outline"></ion-icon> <span>9848730330</span></a>
-                                    </div>
-                                    <!-- for land area and phone is enough but for house bedroom and storey additional -->
-                                    <div class="detail property-bedroom-numbers"><ion-icon name="bed-outline"></ion-icon> <span> 8 bedroom</span></div>
-                                    <div class="detail property-storey"><ion-icon name="menu-outline"></ion-icon> 3 Storey</div>
+
+                                <div class="block-detail-item my-4 text-left">                                  
+                                    <div class="material-icons"> bed </div>
+                                    <div style="margin-bottom: 10px;">Bedroom 10 </div>
                                 </div>
-                                <div class="property-id-and-detailsBtn">
-                                    <div class="property-id">Property ID: 23765</div>
-                                    <button class="property-item-details"> Details</button>
+
+                                <div class="block-detail-item mt-4 text-left">                                  
+                                    <div class="material-icons"> kitchen </div>
+                                    <div style="margin-bottom: 10px;">Kitchen 5 </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="property-detail-block col-lg-4 col-md-4 col-6 center-align-items">
+                            <div class="d-inline">
+                                <div class="block-detail-item mb-4 text-left">                                  
+                                        <div class="material-icons">  king_bed  </div>
+                                        <div style="margin-bottom: 10px;">Living Room 1 </div>
                                 </div>
+
+                                <div class="block-detail-item my-4 text-left">                                  
+                                    <div class="material-icons"> bathtub </div>
+                                    <div style="margin-bottom: 10px;">Bathroom 10 </div>
+                                </div>
+
+                                <div class="block-detail-item mt-4 text-left">                                  
+                                    <div class="material-icons">  directions_car  </div>
+                                    <div style="margin-bottom: 10px;">Parking 3 </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div><!-- property-detail-block ends-->
+
+                     <!-- detailed descriptions start -->
+                    <div class="detailed-descriptions-left">
+                        <div class="detail-features">
+                             <div class="property-item-title sub-title-text mt-3">3.5 Storey House For Sale at Dhangadhi,Kailali</div>
+                             <div class="property-item-description paragrapgh-text my-3">The house is located at Chatakpur, Dhangadhi of Kailali district near main east west highway.
+                                 The house is located at Chatakpur, Dhangadhi of Kailali district near main east west highway.
+                             </div>
+                             <div class="special-features">
+                                  <div class="sub-title-text mb-2">
+                                     Special Features of the Property are as follows:
+                                     <hr class="solid">
+                                  </div>
+                                  <div class="features-list">
+                                     <ol class="ml-3 paragrapgh-text">
+                                         <li>The total area of the house is 5 aana.</li>
+                                         <li>Facing Direction: South-East.</li>
+                                         <li>Road Access: 50 metres away from 4-lane pitch road.</li>
+                                         <li>10,000 Litres of a reserved water tank.</li>
+                                         <li>Parking Space for 2 Cars and 1 bike.</li>
+                                         <li>24 hours Electricity and Water.</li>
+                                     </ol>
+                                  </div>
+                             </div>
+                        </div>
+ 
+                        <div class="detail-address my-5 detail-features">
+                         <div>
+                             <span  class="sub-title-text">Address</span>
+                             <hr class="solid">
+                          </div>
+                          <div class="paragrapgh-text">
+                             <b class="bold-para-text">Tole: </b><span class="paragrapgh-text">Near Chatakpur Chowk</span>
+                             <br>
+                             <b class="bold-para-text">District: </b><span class="paragrapgh-text">Kailali</span>
+                             <br>
+                             <b class="bold-para-text">City: </b><span class="paragrapgh-text">Dhangadhi</span>
+                             <br>
+                             <b class="bold-para-text">State: </b><span class="paragrapgh-text">Sudurpashchim</span>
+                          </div>
+                       </div>
+ 
+                       <div class="detail-additional my-5 detail-features">
+                         <div>
+                             <span  class="sub-title-text">Additional Details</span>
+                             <hr class="solid">
+                          </div>
+                          <div class="paragrapgh-text">
+                             <b class="bold-para-text">Property ID: </b><span class="paragrapgh-text">453456</span>
+                             <br>
+                             <b class="bold-para-text">Building Age: </b><span class="paragrapgh-text">5 Years</span>
+                             <br>
+                             <b class="bold-para-text">Posted On: </b><span class="paragrapgh-text">2 Feb 2023</span>
+                             <br>
+                             <b class="bold-para-text">Total price (NRs): </b><span class="paragrapgh-text">2,00,00,000</span>
+                          </div>
+                       </div>
+                    </div><!-- detailed descriptions end -->
+
+                </div>
+
+                <!-- sidebar -->
+                <div class="col-lg-4">
+                    <!-- video details and  property location map -->
+                    <div class="short-description-and-map mt-5 center-align-items2">
+                        <div class="single-property-video-coontainer mt-5  w-100">
+                            <div class="single-property-video">
+                                <iframe width="100%" height="320px" src="https://www.youtube.com/embed/43zZS8znDeg" 
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
                             </div>
                         </div>
 
-                        <div class="single-property-map mt-5">
+                        <div class="single-property-map my-5">
                             <div class="property-map">
                                 <iframe id="gmap" 
                                         src="https://maps.google.com/maps?q=dhangadhi nepal&t=&z=10&ie=UTF8&iwloc=&output=embed"
@@ -351,80 +459,8 @@
                             </div>
                         </div>
                     </div>
-
-
-                </div>
-            </div>
-        </section>
-    </section>
-
-
-
-    <!-- ========================Detaied Description with Features Section Started==================
- 	---------------------------------------------------------------------- -->
-     <section>
-        <section class="detailed-descriptions">
-            <div class="container-fluid detailed-descriptions-container custom-container">
-                <div class="row">
-                     <div class="detailed-descriptions-left col-lg-7">
-                       <div class="detail-features">
-                            <div class="property-item-title sub-title-text mt-3">3.5 Storey House For Sale at Dhangadhi,Kailali</div>
-                            <div class="property-item-description paragrapgh-text my-3">The house is located at Chatakpur, Dhangadhi of Kailali district near main east west highway.
-                                The house is located at Chatakpur, Dhangadhi of Kailali district near main east west highway.
-                            </div>
-                            <div class="special-features">
-                                 <div class="sub-title-text mb-2">
-                                    Special Features of the Property are as follows:
-                                    <hr class="solid">
-                                 </div>
-                                 <div class="features-list">
-                                    <ol class="ml-3 paragrapgh-text">
-                                        <li>The total area of the house is 5 aana.</li>
-                                        <li>Facing Direction: South-East.</li>
-                                        <li>Road Access: 50 metres away from 4-lane pitch road.</li>
-                                        <li>10,000 Litres of a reserved water tank.</li>
-                                        <li>Parking Space for 2 Cars and 1 bike.</li>
-                                        <li>24 hours Electricity and Water.</li>
-                                    </ol>
-                                 </div>
-                            </div>
-                       </div>
-
-                       <div class="detail-address my-5 detail-features">
-                        <div>
-                            <span  class="sub-title-text">Address</span>
-                            <hr class="solid">
-                         </div>
-                         <div class="paragrapgh-text">
-                            <b class="bold-para-text">Tole: </b><span class="paragrapgh-text">Near Chatakpur Chowk</span>
-                            <br>
-                            <b class="bold-para-text">District: </b><span class="paragrapgh-text">Kailali</span>
-                            <br>
-                            <b class="bold-para-text">City: </b><span class="paragrapgh-text">Dhangadhi</span>
-                            <br>
-                            <b class="bold-para-text">State: </b><span class="paragrapgh-text">Sudurpashchim</span>
-                         </div>
-                      </div>
-
-                      <div class="detail-additional my-5 detail-features">
-                        <div>
-                            <span  class="sub-title-text">Additional Details</span>
-                            <hr class="solid">
-                         </div>
-                         <div class="paragrapgh-text">
-                            <b class="bold-para-text">Property ID: </b><span class="paragrapgh-text">453456</span>
-                            <br>
-                            <b class="bold-para-text">Building Age: </b><span class="paragrapgh-text">5 Years</span>
-                            <br>
-                            <b class="bold-para-text">Posted On: </b><span class="paragrapgh-text">2 Feb 2023</span>
-                            <br>
-                            <b class="bold-para-text">Total price (NRs): </b><span class="paragrapgh-text">2,00,00,000</span>
-                         </div>
-                      </div>
-                     </div>
-
-
-                     <div class="detailed-descriptions-contact-right col-lg-5">
+                    <!-- property-item-detailed-desceiptions-->
+                    <div class="detailed-descriptions-contact-right">
                         <div class="phone-mail-contact contact-card">
                              <div class="phone-icon">
                                 <ion-icon name="phone-portrait-outline"></ion-icon> <br> <span class="sub-title-text"> Phone Contact:</span>                            
@@ -433,19 +469,11 @@
                             <div class="mail-icon">
                                 <ion-icon name="mail-unread-outline"></ion-icon> <br> <span class="sub-title-text"> Mail Contact:</span>                            
                                <div class="paragraph-text ml-4"> <a href="mailto:example@gmail.com">example@gmail.com</a> </div>
-                           </div>
+                            </div>
                         </div>
+                    </div>
 
-                        <div class="social-contact contact-card my-5">
-                            <div class="mail-icon">
-                               <span class="sub-title-text"> Social Contact:</span>  <br> <br>                       
-                               <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                               <a href="" class="mx-5"><ion-icon name="logo-youtube"></ion-icon></a>
-                               <a href=""><ion-icon name="logo-tiktok"></ion-icon></a>
-                           </div>
-                       </div>
-
-                       <div class="contact-form contact-card mb-5">
+                    <div class="contact-form contact-card my-5">
                         <form>
                                <div class="row center-align-items">
                                      <ion-icon name="mail-outline"></ion-icon> &nbsp;&nbsp; <span class="sub-title-text text-center"> Leave us a message</span>
@@ -469,9 +497,28 @@
                                         <button class="w-50">SUBMIT REQUEST</button>
                                      </div>
                          </form>
-                        </div>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+        </section>
 
-                     </div>
+        
+
+    <!-- ========================Share Section Started==================
+ 	---------------------------------------------------------------------- -->
+        <section class="detailed-descriptions">
+            <div class="container-fluid detailed-descriptions-container custom-container">
+                <div class="row">
+                    <div class="social-contact">
+                        <div class="mail-icon pl-3 mb-5">
+                           <span class="sub-title-text"> Share:</span> &ensp;                      
+                           <a href="" style="font-size: 24px;"><ion-icon name="logo-facebook" style="margin-bottom: -5px;"></ion-icon></a>
+                           <a href="" class="mx-3" style="font-size: 24px;"><ion-icon name="logo-youtube" style="margin-bottom: -5px;"></ion-icon></a>
+                           <a href="" style="font-size: 24px;"><ion-icon name="logo-tiktok" style="margin-bottom: -5px;"></ion-icon></a>
+                       </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -604,24 +651,6 @@
         </div>
     </section>
 
-    <!-- js for mobile menu control -->
-    <script type="text/javascript">
-        function openMobileMenu(){
-            document.getElementById('mbmn').style.width="260px";
-            document.getElementById('main-wrap').style.display="block";
-
-            var element = document.getElementById("mbmn");
-         element.classList.add("overlay");
-        }
-        
-        function closeMobileMenu(){
-            document.getElementById('mbmn').style.width="0px";
-            document.getElementById('main-wrap').style.display="none";
-              
-              var element = document.getElementById("mbmn");
-         element.classList.remove("overlay");        	 
-        }
-    </script>
     
     <!-- // js for photo slider opening small image in bigger div -->
     <script type="text/javascript">
