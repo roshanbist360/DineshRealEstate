@@ -1,5 +1,5 @@
  
- // mobie menu controls
+ // mobie menu (mbmn) controls
  function openMobileMenu(){
     document.getElementById('mbmn').style.width="260px";
     document.getElementById('main-wrap').style.display="block";

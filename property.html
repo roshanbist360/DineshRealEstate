@@ -15,7 +15,7 @@
           <!-- cdn for fontawesome -->
           <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
           <!-- FAVICONS ICON -->
-          <link rel="icon" type="image/png" href="images/">
+          <link rel="icon" type="image/png" href="images/favicon.png">
           <!-- cdn for ion icons -->
           <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script> 
@@ -195,14 +195,32 @@
     </section>
 
 
-    <!-- ========================LogIn Register PopUp ==Re-used== and some modifications done==================
+   <!-- ========================LogIn Register PopUp ==Re-used== and some modifications done==================
  	---------------------------------------------------------------------- -->
      <section class="logIn-Register-popUp-section" id="register-wrapper">
         <div class="container logIn-Register-container ">
             <div class="row">
-                <!-- sign in -->
+               
                 <span onclick="closeRegisterForm1()" class="sub-title-text text-danger ml-auto pr-3" style="cursor:pointer; margin-bottom: -20px;"> <ion-icon name="close-circle-outline" ></ion-icon> Close</span>
                 <div class="form-popup center-align-items" id="form-sign-in">
+                    <!-- sign up or register-->
+                <div class="sign-up center-align-items px-4" id="form-sign-up">
+                    <div class="sign-up-content">
+                        <div class="form-item center-align-items">
+                            <span class="sub-title-text text-center text-white">Already Registered?</span> 
+                         </div>
+                         <div class="form-item center-align-items mt-3">
+                            <span class="paragraph-text text-center text-white">Are you already registered user? Log In enjoy our services.</span> 
+                         </div>
+                         <form action="">
+                            <div class="form-item center-align-items mt-3">
+                                <button class="w-50" onclick="closeRegisterForm()">LOG IN</button>
+                             </div>
+                         </form>
+                    </div> 
+                </div>
+                   
+                 <!-- sign in -->
                     <div class="popup-content center-align-items contact-form contact-card mb-5">
                         <form action="">
                                <div class="row center-align-items">
@@ -247,23 +265,6 @@
                                      </div>
                          </form>
                         </div>
-                </div>
-
-                <!-- sign up -->
-                <div class="sign-up center-align-items px-4" id="form-sign-up">
-                    <div class="sign-up-content">
-                        <div class="form-item center-align-items">
-                            <span class="sub-title-text text-center text-white">Already Registered?</span> 
-                         </div>
-                         <div class="form-item center-align-items mt-3">
-                            <span class="paragraph-text text-center text-white">Are you already registered user? Log In enjoy our services.</span> 
-                         </div>
-                         <form action="">
-                            <div class="form-item center-align-items mt-3">
-                                <button class="w-50" onclick="closeRegisterForm()">LOG IN</button>
-                             </div>
-                         </form>
-                    </div> 
                 </div>
 
             </div>
@@ -374,13 +375,10 @@
     <section class="properties-section">
         <div class="container-fluid properties-container custom-container py-5">
             <div class="heading-text w-100">
-                <div class="heading-text center-align-items">
+                <div class="heading-text text-left">
                     <h3 class="title">All Properties</h3>
-                </div>
-                <div class="heading-text center-align-items">
-                    <hr class="solid">
-                </div>                              
-           </div>
+                </div>                            
+            </div>
 
             <div class="row">
                 <div class="properties-content">
@@ -638,6 +636,31 @@
     </section>
 
 
+    <!-- ========================Pagination Section Started==================
+ 	---------------------------------------------------------------------- -->
+     <section class="container-fuid mb-5">
+        <div class="custom-container">
+            <div class="row">
+                <nav aria-label="..." class="mx-auto">
+                    <ul class="pagination">
+                      <li class="page-item" id="page-item1">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item active"  id="page-item-id1" onclick="addBackground(1)"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item" id="page-item-id2" onclick="addBackground(2)">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"  id="page-item-id3" onclick="addBackground(3)"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+             </div>
+        </div>
+    </section>
+
+
      <!-- ========================Footer Section Started==================
  	---------------------------------------------------------------------- -->
     <section class="container-fuid footer-bottom">
@@ -649,6 +672,6 @@
             </div>
         </div>
     </section>
-
+    
  </body>
  </html>
