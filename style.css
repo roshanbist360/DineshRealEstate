@@ -22,6 +22,7 @@ body{
    --primary-light2-color:#f0f8ff;
    --primary-dark-color:#01529e;
    --primary-dark2-color:#000e1b;
+   --primary-dark3-color:#062440;
 
    --secondry-color:#d7494b;
    --secondry-light-color:#d7494b;
@@ -35,6 +36,8 @@ body{
    --primary-font: 'Barlow', sans-serif;
    --secondry-font:'Noto Sans', sans-serif;
 }
+
+/* ============Globally used Css============== */
 .custom-container{
     padding: 0 8%;
 }
@@ -590,7 +593,117 @@ body{
 }
 
 /* ========================Footer Section Started==================
- 	---------------------------------------------------------------------- */
+---------------------------------------------------------------------- */
+/* newsletter */
+.newsletter{
+    height: 160px;
+    width: 100%;
+    margin-top: -200px;
+    background: var(--primary-light2-color);
+    box-shadow: 1px 1px 5px #444;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-title{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    color: var(--primary-dark2-color);
+    line-height: 20px;
+    line-height: 30px;
+}
+.newsletter input{
+    height: 40px;
+    width: 300px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 0 5px;
+}
+.newsletter ul{
+    height: 40px;
+    margin: 0 8px;
+}
+#newsletter-button{
+    height: 40px;
+}
+/* actual footer body */
+.footer{
+    padding: 100px  0px 60px 0px;
+    background: var(--primary-dark3-color);
+}
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    margin-top: -20px;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo img{
+    height: 60px;
+    width: auto;
+}
+.footer-about-head{
+    padding: 20px;
+    clip-path: polygon(0 21%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 0 81%, 7% 51%);
+    -webkit-clip-path: polygon(0 21%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 0 81%, 7% 51%);
+    -moz-clip-path: polygon(0 21%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 0 81%, 7% 51%);
+    -ms-clip-path: polygon(0 21%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 0 81%, 7% 51%);
+    -o-clip-path: polygon(0 21%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 0 81%, 7% 51%);
+    height: 100%;
+    width: 50%;
+    background: #0469c6;
+}
+.footer-logo span{
+     color: var(--primary-light2-color);
+}
+.footer-about-text{
+    margin-top: 12px;
+}
+.footer-about-text p{
+    color:var(--primary-light2-color);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--secondry-font);
+}
+.footer-headings{
+    margin-bottom: 20px;
+    color: var(--primary-light2-color);
+    font-size: 24px;
+    font-family: var(--primary-font);
+}
+.anchor-links{
+    cursor: pointer;
+    width: auto;
+ }
+.anchor-links a{
+    color:var(--primary-light2-color);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--secondry-font);
+ }
+ .anchor-links a:hover{
+    color: #ccc;
+    text-decoration: none;
+ }
+.footer-contact-social ion-icon{
+    font-size: 20px;
+}
+.footer-contact-social span{
+    color:var(--primary-light2-color);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: var(--secondry-font);
+}
+
+/* footer bottom */
 .footer-bottom{
     color: var(--primary-light2-color);
     background: var(--primary-dark2-color);
@@ -662,6 +775,22 @@ body{
         display: block;
         text-align: center;
     }
+
+    .footer-div{
+        display: block;
+        margin: 30px 0px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer{
+        padding: 0;
+    }
+    .newsletter{
+        margin-top: -40px;
+        margin-bottom: 50px;
+        padding: 60px 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -684,6 +813,11 @@ body{
     #form-sign-up{
         display: none;
     }
+    .footer-div{
+        display: block;
+        text-align: center;
+        margin: 30px 0px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -696,6 +830,10 @@ body{
     .property-description{
         padding:25px 08px;
     }
+
+    .newsletter input{
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -706,4 +844,7 @@ body{
 }
 
 @media screen and (max-width: 360px) {
+    .newsletter input{
+        width: 160px;
+    }
 }
