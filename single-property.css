@@ -137,6 +137,9 @@ form button:hover{
 	background-color: var(--primary-dark-color);
 }
 /* recommended properties */
+.recommended-peoperties-section {
+   padding-bottom: 100px;
+}
 .recommended-property-item{
     width: 30%;
     display: block;

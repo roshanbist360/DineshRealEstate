@@ -21,7 +21,12 @@
     height: 2px;
     background: var(--secondry-color);
 }
-
+.properties-section{
+    margin-bottom: 0px;
+}
+.pagination-section{
+    margin-bottom: 80px;
+}
 /* recommended properties */
 .recommended-property-item{
     width: 30%;
