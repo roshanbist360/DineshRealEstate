@@ -592,6 +592,82 @@ body{
     background: var(--primary-dark-color);
 }
 
+
+/* ========================Properties according to place  Section Started==================
+---------------------------------------------------------------------- */
+.property-place-section{
+    background: #eeeeee;
+    padding: 60px 0 70px 0;
+  }
+  .place-image{
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 6px;
+  }
+  #place-image-1{
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/dhangadhi.jpg');
+      background-position: center center;
+      background-size: cover;
+  }
+  #place-image-2{
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/mahendranagar.jpg');
+      background-position: center center;
+      background-size: cover;
+  }
+  #place-image-3{
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/hero.jpg');
+      background-position: center center;
+      background-size: cover;
+  }
+  #place-image-4{
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('images/hero.jpg');
+      background-position: center center;
+      background-size: cover;
+  }
+  .property-place-heading{
+      color: #fff;
+      margin-bottom: 20px;
+  }
+  .property-place-content a{
+      color: #fff;
+      background: #0469c6;
+      padding: 10px 20px;
+      border-radius: 6px;
+  }
+  .property-place-content a:hover{
+     text-decoration: none;
+  }
+  
+  /* ========================What are you looking for Section Started==================
+  ---------------------------------------------------------------------- */
+  .what-are-you-looking-for-section{
+      padding: 60px 0 120px 0;
+    }
+  .looking-for-item{
+      background: #eeeeee;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 6px;
+  }
+  .looking-for-item .image{
+    height: 120px;
+    width: auto;
+  }
+  .looking-for-item .image img{
+      height: 100%;
+      width: auto;
+      border-radius: 360px;
+    }
+  
+    
+
 /* ========================Footer Section Started==================
 ---------------------------------------------------------------------- */
 /* newsletter */
@@ -751,6 +827,12 @@ body{
         text-align: center;
     }
 
+    /* .what-are-you-looking-for-section */
+    .looking-for-item{
+        margin-bottom: 30px;
+    }
+
+    /* footer */
     .footer-div{
         display: block;
         margin: 30px 0px;
@@ -792,6 +874,15 @@ body{
         display: block;
         text-align: center;
         margin: 30px 0px;
+    }
+
+     /* property-according -to-place */
+     .place-image{
+        height: 220px;
+    }
+    #place-image-2, #place-image-4{
+        height: 280px;
+       margin-top: 25px;
     }
 }
 
